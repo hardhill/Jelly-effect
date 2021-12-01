@@ -7,10 +7,10 @@ const ctx:CanvasRenderingContext2D|null = canvas.getContext('2d')
    
 const mouse = new Mouse(canvas)
 const balls:Array<Ball> = new Array<Ball>()
-for(let i=0;i<600;i++){
+for(let i=0;i<1200;i++){
     let x = Math.random()*600
     let y = Math.random()*600
-    let ball = new Ball(ctx!,x,y,3,'#aa6600')
+    let ball = new Ball(ctx!,x,y,3,'#30aaff')
     balls.push(ball)
 }
 const cursor = new Ball(ctx!,0,0,30,'#22cc1933')

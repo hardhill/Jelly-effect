@@ -22,7 +22,7 @@ export default class Ball{
         this.vx = 0
         this.vy = 0
         this.sensdist = 30
-        this.friction = 0.7
+        this.friction = 0.4
         this.springFactor = 0.01
     }
     think(x:number, y:number){

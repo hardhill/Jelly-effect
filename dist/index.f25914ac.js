@@ -464,10 +464,10 @@ let canvas = document.getElementById('drawField');
 const ctx = canvas.getContext('2d');
 const mouse = new _mouseDefault.default(canvas);
 const balls = new Array();
-for(let i = 0; i < 600; i++){
+for(let i = 0; i < 1200; i++){
     let x = Math.random() * 600;
     let y = Math.random() * 600;
-    let ball = new _ballDefault.default(ctx, x, y, 3, '#aa6600');
+    let ball = new _ballDefault.default(ctx, x, y, 3, '#30aaff');
     balls.push(ball);
 }
 const cursor = new _ballDefault.default(ctx, 0, 0, 30, '#22cc1933');
@@ -552,7 +552,7 @@ class Ball {
         this.vx = 0;
         this.vy = 0;
         this.sensdist = 30;
-        this.friction = 0.7;
+        this.friction = 0.4;
         this.springFactor = 0.01;
     }
     think(x, y) {
